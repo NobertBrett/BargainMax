@@ -200,7 +200,7 @@ html {
 }
 #main-page p {
   font-weight: 400;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 34px;
 }
 .first-character {
@@ -238,7 +238,7 @@ html {
 /* Section - Block */
 /**************************/
 #main-page .block {
-  
+
   height: 400px;
   padding: 60px;
   width: 820px;
@@ -264,13 +264,10 @@ html {
   overflow: hidden;
   position: relative;
   width: 100%;
-  background: url(https://images.pexels.com/photos/3756345/pexels-photo-3756345.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) ;
-  background-attachment: fixed;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
+  background: url(https://images.pexels.com/photos/3756345/pexels-photo-3756345.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) no-repeat fixed top center;
   background-blend-mode: multiply;
 }
 #main-page .parallax-two {
@@ -279,35 +276,30 @@ html {
   overflow: hidden;
   position: relative;
   width: 100%;
-  background: url(https://images.pexels.com/photos/7551442/pexels-photo-7551442.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) ;
-  background-attachment: fixed;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  background: url(https://images.pexels.com/photos/7551442/pexels-photo-7551442.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) no-repeat fixed center center;
   background-blend-mode: multiply;
 }
 #main-page .parallax-three {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   overflow: hidden;
   position: relative;
-  width: 100%;
-  background: url(https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
-  background-attachment: fixed;
-  background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-blend-mode: multiply;
+  width: 80%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .blur{
   background-color: #ffffff10;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
+
+
 
 /* Extras */
 /**************************/
@@ -315,6 +307,13 @@ html {
   border-bottom: 2px solid var(--red);
   width: 150px;
   margin: 0 auto;
+}
+.video-title{
+  font-size: 4rem;
+  font-weight: 400;
+  color: var(--blue);
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 
