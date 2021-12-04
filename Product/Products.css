@@ -230,7 +230,7 @@ html {
     background: var(--white);
     color: var(--red);
     box-shadow: 0px 2px 10px 5px var(--red);
-    padding-left: .1rem; 
+    padding-left: .1rem;
     transition: all 265ms ease-in;
     border-radius:15%;
 }
@@ -262,6 +262,14 @@ section.change {
     transform: rotateY(10deg);
 }
 
+#arrow{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    font-size: 5rem;
+    color: var(--red);
+    transition: all 0.5s;
+}
 .section-heading {
     font-size: 10rem;
     font-weight: bolder;
@@ -295,9 +303,8 @@ section.change {
     justify-content: space-around;
     background-color: var(--blue);
 }
-
 .card {
-    width: 50rem;
+    width: 40rem;
     margin: 0 3rem;
     background-color: var(--cream);
     padding: 1rem;
