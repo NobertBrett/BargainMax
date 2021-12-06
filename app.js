@@ -1,76 +1,73 @@
 // Navbar
-// the full navbar javascript code
 
-//const menu = document.querySelector(".menu");
-//const navbar = document.querySelector(".navbar");
+const menu = document.querySelector(".menu");
+const navbar = document.querySelector(".navbar");
 
-//menu.addEventListener("click", () => {
-    //navbar.classList.toggle("change");
-    //menu.classList.toggle('change')});
+menu.addEventListener("click", () => {
+    navbar.classList.toggle("change");
+    menu.classList.toggle('change')});
 // End of Navbar
 
-//Navbar compressed Javascript code
-const e=document.querySelector(".menu"),c=document.querySelector(".navbar");e.addEventListener("click",(()=>{c.classList.toggle("change"),e.classList.toggle("change")}));
+
 
 //form validation
-//form validation full javascript code
 
-//const form = document.getElementById("form");
-//const name = document.getElementById("name");
-//const email = document.getElementById("email");
-//const message = document.getElementById("message");
 
-//form.addEventListener("submit", (e) => {
-  //  e.preventDefault();
-//});
+const form = document.getElementById("form");
+const name = document.getElementById("name");
+const email = document.getElementById("email");
+const message = document.getElementById("message");
 
-//const error = (element, message) => {
-  //  const formControl = element.parentElement;
-  //  const displayError = formControl.querySelector(".error");
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+});
 
-  // displayError.innerText = message;
-  // formControl.classList.add("error");
-  // formControl.classList.remove("success");}
+const error = (element, message) => {
+    const formControl = element.parentElement;
+    const displayError = formControl.querySelector(".error");
 
-//const success = (element) => {
-  //  const formControl = element.parentElement;
-   // const displayError = formControl.querySelector(".error");
-   // displayError.innerText = "";
-  //  formControl.classList.add("success");
-  //  formControl.classList.remove("error");}
+   displayError.innerText = message;
+   formControl.classList.add("error");
+   formControl.classList.remove("success");}
 
-//const isValidEmail = (email) => {
-  //  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-   // return re.test(String(email).toLowerCase());}
+const success = (element) => {
+    const formControl = element.parentElement;
+    const displayError = formControl.querySelector(".error");
+    displayError.innerText = "";
+    formControl.classList.add("success");
+    formControl.classList.remove("error");}
 
-//const validateDetails = () => {
-  //  const nameValue = name.value.trim();
-  //  const phoneValue = phone.value.trim();
-  //  const emailValue = email.value.trim();
-  //  const messageValue = message.value.trim();
+const isValidEmail = (email) => {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());}
 
-  //  if (nameValue === "") {
-    //    error(name, "Name cannot be empty");
-  //  } else {
-   //     success(name);}
+const validateDetails = () => {
+    const nameValue = name.value.trim();
+    const phoneValue = phone.value.trim();
+    const emailValue = email.value.trim();
+    const messageValue = message.value.trim();
 
-   // if (emailValue === "") {
-     //   error(email, "Email cannot be empty");
-  //  } else if (!isValidEmail(emailValue)) {
-   //     error(email, "Email is not valid");
-  //  } else {
-    //    success(email);}
+    if (nameValue === "") {
+        error(name, "Name cannot be empty");
+    } else {
+        success(name);}
 
-   // if (messageValue === "") {
-     //   error(message, "Message cannot be empty");
-   // } else {
-     //   success(message);
-   // }
+    if (emailValue === "") {
+        error(email, "Email cannot be empty");
+    } else if (!isValidEmail(emailValue)) {
+        error(email, "Email is not valid");
+          } else {
+        success(email);}
 
- // if (phoneValue === "") {
-   //     error(phoneValue, "Telephone cannot be empty");
-  //  } else {
-    //    success(phoneValue);}}
+    if (messageValue === "") {
+        error(message, "Message cannot be empty");
+    } else {
+        success(message);
+    }
 
-//form validation compressed javascript code
-const e=document.getElementById("form");document.getElementById("name"),document.getElementById("email"),document.getElementById("message");e.addEventListener("submit",(e=>{e.preventDefault()}));
+  if (phoneValue === "") {
+        error(phoneValue, "Telephone cannot be empty");
+    } else {
+        success(phoneValue);}}
+
+
