@@ -223,13 +223,13 @@ html {
 
 /* Section - Title */
 /**************************/
-#main-page .title {
+#main-page .headline {
 
   padding: 3.5rem;
   margin-top: 6rem;
   text-align: center;
 }
-#main-page .title h1 {
+#main-page .headline h1 {
   font-size: 4rem;
   color: var(--red);
   letter-spacing: 8px;
