@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Favicon -->  
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io-2/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io-2/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io-2/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon_io-2/site.webmanifest">
     <!-- SEO -->
     <meta name="author" content="Norbert Brett">
-    <meta name="description" content="E-comerce website for Bargain Max">
+    <meta name="description" content="E-commerce website for Bargain Max">
     <!--
     `og` stands for Open Graph, which is a protocol for how your
     website appears when linked to from another site. These tags
@@ -30,15 +30,17 @@
     <meta name="twitter:image:alt" content="Our new e-commerce website">
     <meta name="twitter:site" content="@Bargain_Max">
     <meta name="twitter:creator" content="@NorbertBrett">
-    <meta name="twitter:title" content="Awesome E-comerce website for Bargain Max">
-    <meta name="twitter:description" content="E-comerce website that offer the best deals on lots of products">
+    <meta name="twitter:title" content="Awesome E-commerce website for Bargain Max">
+    <meta name="twitter:description" content="E-commerce website that offer the best deals on lots of products">
 
     <!-- FontAwesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="Contact.css">
-    <title>Bargain Max</title>
+    "
+    <title>Bargain Max Contact</title>
 </head>
 <body>
 <!-- Navbar -->
@@ -49,10 +51,10 @@
         </a>
     </div>
     <div class="nav-list">
-        <a href="../Index.html" class="nav-link">Home</a>
-        <a href="../About/About.html" class="nav-link">About</a>
-        <a href="../Product/Products.html" class="nav-link">Products</a>
-        <a href="Contact.html" class="nav-link">Contact</a>
+        <a href="../Index.html" class="nav-link" title="Home">Home</a>
+        <a href="../About/About.html" class="nav-link" title="About">About</a>
+        <a href="../Product/Products.html" class="nav-link" title="Products">Products</a>
+        <a href="Contact.html" class="nav-link" title="Contact">Contact</a>
     </div>
 </nav>
 <!-- End of Navbar -->
@@ -66,77 +68,78 @@
 <!-- Responsive contact form with google maps -->
 <div class="container">
 
-	<h1 class="brand"><span>Contact Us</span></h1>
+    <h1 class="brand"><span>Contact Us</span></h1>
 
-	<div class="wrapper">
+    <div class="wrapper">
 
-		<!-- COMPANY INFORMATION -->
-		<div class="company-info">
+        <!-- COMPANY INFORMATION -->
+        <div class="company-info">
             <h3>Bargain Max</h3>
 
-			<ul>
-				<li><i class="fa fa-road"></i> 44 Moor Street </li>
-				<li><i class="fa fa-phone"></i> (0121) 555-5555</li>
-				<li><i class="fa fa-envelope"></i> max@bargain.com</li>
-			</ul>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3339.679114248176!2d-1.8960175405075!3d52.479161798159524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc88b0a23981%3A0x2f48a9bcc2e96950!2sBullring%20%26%20Grand%20Central!5e0!3m2!1sen!2suk!4v1636547045998!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-		</div>
-		<!-- End .company-info -->
+            <ul>
+                <li><i class="fa fa-road"></i> 44 Moor Street</li>
+                <li><i class="fa fa-phone"></i> (0121) 555-5555</li>
+                <li><i class="fa fa-envelope"></i> max@bargain.com</li>
+            </ul>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3339.679114248176!2d-1.8960175405075!3d52.479161798159524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc88b0a23981%3A0x2f48a9bcc2e96950!2sBullring%20%26%20Grand%20Central!5e0!3m2!1sen!2suk!4v1636547045998!5m2!1sen!2suk"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <!-- End .company-info -->
 
-		<!-- CONTACT FORM -->
-		<div class="contact">
-			
-			<form id="contact-form">
+        <!-- CONTACT FORM -->
+        <div class="contact">
 
-				<p class="full" >
-					<label>Name</label>
-					<input type="text" name="name" id="name" required>
-				</p>
+            <form id="contact-form">
+
+                <p class="full formControl">
+                    <label>Name</label>
+                    <label for="name"></label><input type="text" name="name" id="name" required>
+                </p>
 
 
-				<p>
-					<label>E-mail Address</label>
-					<input type="email" name="email" id="email" required>
-				</p>
+                <p class="formControl">
+                    <label>E-mail Address</label>
+                    <label for="email"></label><input type="email" name="email" id="email" required>
+                </p>
 
-				<p>
-					<label>Phone Number</label>
-					<input type="text" name="phone" id="phone" required>
-				</p>
+                <p class="formControl">
+                    <label>Phone Number</label>
+                    <label for="phone"></label><input type="text" name="phone" id="phone" required>
+                </p>
 
-				<p class="full">
-					<label>Message</label>
-					<textarea name="message" rows="5" id="message"></textarea required> 
-				</p>
+                <p class="full formControl">
+                    <label>Message</label>
+                    <label for="message"></label><textarea name="message" rows="5" id="message" required></textarea>
+                </p>
 
-				<p class="full">
-					<button type="submit">Submit</button>
-				</p>
+                <p class="full">
+                    <button type="submit">Submit</button>
+                </p>
 
-			</form>
-			<!-- End #contact-form -->
-		</div>
-		<!-- End .contact -->
+            </form>
+            <!-- End #contact-form -->
+        </div>
+        <!-- End .contact -->
 
-	</div>
-	<!-- End .wrapper -->
+    </div>
+    <!-- End .wrapper -->
 </div>
 <!-- End .container -->
 
 <!-- Footer -->
 <footer class="footer">
     <div class="footer-list">
-        <a href="../Index.html" class="footer-link">Home</a>
-        <a href="../About/About.html" class="footer-link">About Us</a>
-        <a href="../Product/Products.html" class="footer-link">Products</a>
-        <a href="Contact.html" class="footer-link">Contact</a>
+        <a href="../Index.html" class="footer-link" title="Home">Home</a>
+        <a href="../About/About.html" class="footer-link" title="About">About Us</a>
+        <a href="../Product/Products.html" class="footer-link" title="Products">Products</a>
+        <a href="Contact.html" class="footer-link" title="Contact">Contact</a>
     </div>
     <div class="footer-paragraph">
         <ul class="social-icons">
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#" title="Facebook"><i class="fab fa-facebook"></i></a></li>
         </ul>
         <p>
             Copyright &copy; Norbert Brett All Rights Reserved
